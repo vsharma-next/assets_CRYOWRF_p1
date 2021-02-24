@@ -36,6 +36,10 @@
  auxhist24_interval_s           = 3600, 60, 
  auxhist24_outname              = './outhist/outhist_d<domain>_<date>.nc',
  frames_per_auxhist24           = 4, 144,
+ io_form_auxhist12              = 2,
+ auxhist12_interval             = 180,
+ auxhist12_outname              = './snpack/snowpack_d<domain>_<date>.nc',
+ frames_per_auxhist12           = 1000,
  iofields_filename              = "heights_output_CCAMM.txt","heights_output_CCAMM.txt",
  debug_level                    = 0     
 /
@@ -102,7 +106,7 @@
  bs_rad_effect                  = .false.,.false.,.false.
  sn_start_from_file             = .true.,.false.,.false.
  num_bs_sfc_layers              = 8,
- no_snpack_lay_to_sav           = 500,
+ no_snpack_lay_to_sav           = 300,
  snpack_dt                      = 60,60,1.5
  snpack_write_dt                = 3600,3600,1440
  snpack_mode                    = 'land'
